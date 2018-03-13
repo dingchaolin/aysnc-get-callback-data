@@ -8,11 +8,14 @@ let getFileContent = function(){
             console.log(err)
         }
         txt = data.toString()
+        console.log(txt)
     })
 
     while (!txt){
-        setTimeout(function(){}, 100)
-        console.log("txt====", txt)
+        setTimeout(function(){
+            console.log("txt====", txt)
+        }, 100)
+
     }
 
     return txt
